@@ -1,0 +1,15 @@
+hostname: AS1
+mgmt_ip: +++++++*jsvlklnsv
+  ip_address:++++++ 10.100.190.4
+  netmask: 255.255.255.240
+vlans:
+    - { "number": 1201, name: "WLAN-MGM"}
+    - { "number": 1202, name: "O2F" }
+    - { "number": 1203, name: "IT" }
+     
+trunk_interface:
+    - { trunk_interface: e0/0,description: "###To_Core_Switch_E0/3###",allowed_vlan + "1201,1202,1203" }
+
+access_interface:
+    - { access_interface: e0/2,vlan: 107,portfast: "yes" ,description: "" }
+    - { access_interface: e0/3,vlan: 108,portfast: "yes" ,description: "" }
