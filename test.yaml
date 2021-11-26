@@ -3,7 +3,7 @@ mgmt_ip: +++++++*jsvlklnsv
   ip_address:++++++ 10.100.190.4
   netmask: 255.255.255.240
 vlans:
-    - { "number": 1201, name: "WLAN-MGM"}
+    -    { "number": 1201, name: "WLAN-MGM"}
     - { "number": 1202, name: "O2F" }
     - { "number": 1203, name: "IT" }
      
